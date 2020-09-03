@@ -1,0 +1,70 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+header
+{
+    display: flex;
+    flex-direction: column;
+}
+
+header .logo
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+header img
+{
+    width: 22vw;
+    height: 20vh;
+}
+header h1
+{
+    font-size: 2.8em;
+    color: rgb(1, 144, 236);
+}
+
+header .menu
+{
+    border: 1px solid black;
+}
+header .menu #visible
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+header .menu #visible li
+{
+    list-style-type: none;
+}
+header .menu #visible li a
+{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+
+/* DEROULANT */
+header .menu .sous
+{
+    display: none;
+    position: absolute;
+}
+header .menu li:hover > ul
+{
+    display: block;
+}
+.menu .sous li
+{
+    display: block;
+    background-color: rgb(60, 175, 228);
+}
+/* FIN DEROULANT */
+/* FIN HEADER */
