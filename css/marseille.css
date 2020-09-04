@@ -4,6 +4,14 @@
     padding: 0;
 }
 
+/* background body */
+#accueil
+{
+    background-image: url("../img/accueil/back.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 /* HEADER */
 header
 {
@@ -32,6 +40,9 @@ header h1
 header .menu
 {
     border: 1px solid black;
+    border-radius: 15px;
+    margin: 2%;
+    background-color: rgba(255, 255, 255, 0.699);
 }
 header .menu #visible
 {
@@ -68,3 +79,161 @@ header .menu li:hover > ul
 }
 /* FIN DEROULANT */
 /* FIN HEADER */
+
+/* FOOTER */
+footer
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin: 2%;
+}
+
+footer #left
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+#left ul li
+{
+    list-style-type: none;
+}
+#left ul li a
+{
+    text-decoration: none;
+    color: black;
+}
+
+footer #middle
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+#middle a
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+}
+#middle a img
+{
+    align-self: center;
+    width: 5vw;
+    height: 5vh;
+}
+
+footer #right
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+#right #office
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+#right #github
+{
+    display: flex;
+    flex-direction: column;
+}
+#right #github #img_git
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+/* FIN FOOTER */
+
+/* INDEX */
+.index
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0.85;
+}
+
+.index h2
+{
+    font-size: 2em;
+    margin-left: 20%;
+    color: white;
+    text-decoration: underline;
+}
+.index #covid
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.index img
+{
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    z-index: 1;
+}
+.index img:hover
+{
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+    opacity: 1;
+    z-index: 2;
+}
+.index #covid img
+{
+    align-self: center;
+    width: 60vw;
+    height: 40vh;
+    border-radius: 15px;
+    margin: 2%;
+}
+
+.index #news
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    margin-bottom: 2%;
+}
+.index #news #rentree
+{
+    width: 40vw;
+    height: 60vh;
+    border-radius: 15px;
+}
+.index #news #foot
+{
+    width: 40vw;
+    height: 40vh;
+    border-radius: 15px;
+}
+
+.index #actu
+{
+    display: flex;
+    flex-direction: column;
+}
+.index #actu img
+{
+    align-self: center;
+    width: 60vw;
+    height: 50vh;
+    border-radius: 15px;
+    margin: 2%;
+}
+/* FIN INDEX */
